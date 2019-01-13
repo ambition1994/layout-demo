@@ -48,6 +48,7 @@ footer {
           input {
             @include size(15.75rem, 3.5rem);
             border: 0rem;
+            border-radius: 0rem;
             outline: none;
             background-color: $light_green;
           }
