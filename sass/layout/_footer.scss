@@ -47,8 +47,8 @@ footer {
 
           input {
             @include size(15.75rem, 3.5rem);
-            border: none;
-            outline: none;
+            border: 0rem;
+            // outline: none;
             background-color: $light_green;
           }
 
@@ -168,11 +168,9 @@ footer {
       }
 
       .footer-right {
-        margin-right: 0rem;
-        width: 14.25rem;
+        @include flex_center_center;
+        width: 100%;
         margin-top: -2.5rem;
-        margin-left: auto;
-        margin-right: auto;
 
         .footer-right-logo {
           display: none;

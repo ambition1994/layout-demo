@@ -684,8 +684,7 @@ footer .footer-top .bar-area .bar-2 .bar-input {
 footer .footer-top .bar-area .bar-2 .bar-input input {
   width: 15.75rem;
   height: 3.5rem;
-  border: none;
-  outline: none;
+  border: 0rem;
   background-color: #eaf0ed;
 }
 
@@ -838,11 +837,17 @@ footer .footer-bottom .footer-area .footer-right p {
     margin-top: 1rem;
   }
   footer > .footer-bottom .footer-area .footer-right {
-    margin-right: 0rem;
-    width: 14.25rem;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    width: 100%;
     margin-top: -2.5rem;
-    margin-left: auto;
-    margin-right: auto;
   }
   footer > .footer-bottom .footer-area .footer-right .footer-right-logo {
     display: none;
