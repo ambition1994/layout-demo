@@ -11,7 +11,7 @@ nav {
   .nav-logo {
     @include size(13.75rem, 2.5rem);
     @include image_center;
-    background-image: url(../../img/logo-navbar.png);
+    background-image: url(../img/logo-navbar.png);
   }
 
   ul {
@@ -51,7 +51,7 @@ nav {
     .sm-nav-logo {
       @include image_center;
       @include size(10.75rem, 1.75rem);
-      background-image: url(/img/logo-footer.png);
+      background-image: url(../img/logo-footer.png);
     }
 
     ul {

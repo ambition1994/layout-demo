@@ -18,10 +18,10 @@ main {
       .main-img {
         @include image_center;
         @include size(28.75rem, 28.75rem);
-        background-image: url(../../img/sweet-5.jpg);
+        background-image: url(../img/sweet-5.jpg);
 
         &:last-of-type {
-          background-image: url(../../img/sweet-6.jpg);
+          background-image: url(../img/sweet-6.jpg);
         }
       }
 
@@ -37,10 +37,10 @@ main {
         @include size(5.625rem, 19.25rem);
         margin-top: -1.25rem;
         align-self: flex-start;
-        background-image: url(../../img/直式-為什麼一定要吃甜點.png);
+        background-image: url(../img/直式-為什麼一定要吃甜點.png);
 
         &:last-of-type {
-          background-image: url(../../img/直式-為什麼選擇了做甜點.png);
+          background-image: url(../img/直式-為什麼選擇了做甜點.png);
         }
       }
     }
@@ -56,7 +56,7 @@ main {
   .main-bottom {
     @include image_center;
     @include size(5.625rem, 20.625rem);
-    background-image: url(../../img/直式-想吃甜點是不需要理由的.png);
+    background-image: url(../img/直式-想吃甜點是不需要理由的.png);
   }
 }
 
@@ -68,10 +68,10 @@ main {
       margin-left: auto;
       margin-right: auto;
       margin-bottom: 5rem;
-      background-image: url(../../img/橫式-為什麼一定要吃甜點.png);
+      background-image: url(../img/橫式-為什麼一定要吃甜點.png);
 
       &:nth-of-type(1) {
-        background-image: url(../../img/橫式-為什麼選擇了做甜點.png);
+        background-image: url(../img/橫式-為什麼選擇了做甜點.png);
       }
     }
 
@@ -133,7 +133,7 @@ main {
     .main-bottom {
       @include image_center;
       @include size(20.625rem, 5.75rem);
-      background-image: url(../../img/橫式-想吃甜點是不需要理由的.png);
+      background-image: url(../img/橫式-想吃甜點是不需要理由的.png);
     }
   }
 }

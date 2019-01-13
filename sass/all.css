@@ -73,7 +73,7 @@ section .hero {
   background-position: center center;
   width: 58.75rem;
   height: 31.25rem;
-  background-image: url(../../img/sweet-1.jpg);
+  background-image: url(../img/sweet-1.jpg);
 }
 
 @media (max-width: 767px) {
@@ -118,7 +118,7 @@ nav .nav-logo {
   height: 2.5rem;
   background-size: cover;
   background-position: center center;
-  background-image: url(../../img/logo-navbar.png);
+  background-image: url(../img/logo-navbar.png);
 }
 
 nav ul {
@@ -161,7 +161,7 @@ nav ul li i {
     background-position: center center;
     width: 10.75rem;
     height: 1.75rem;
-    background-image: url(/img/logo-footer.png);
+    background-image: url(../img/logo-footer.png);
   }
   nav ul li:nth-of-type(1),
   nav ul li:nth-of-type(2),
@@ -195,15 +195,15 @@ section .menu {
 }
 
 section .menu:nth-of-type(1) {
-  background-image: url(../../img/sweet-2.jpg);
+  background-image: url(../img/sweet-2.jpg);
 }
 
 section .menu:nth-of-type(2) {
-  background-image: url(../../img/sweet-3.jpg);
+  background-image: url(../img/sweet-3.jpg);
 }
 
 section .menu:nth-of-type(3) {
-  background-image: url(../../img/sweet-4.jpg);
+  background-image: url(../img/sweet-4.jpg);
   border-right: none;
 }
 
@@ -290,11 +290,11 @@ main .main-area .main-content .main-img {
   background-position: center center;
   width: 28.75rem;
   height: 28.75rem;
-  background-image: url(../../img/sweet-5.jpg);
+  background-image: url(../img/sweet-5.jpg);
 }
 
 main .main-area .main-content .main-img:last-of-type {
-  background-image: url(../../img/sweet-6.jpg);
+  background-image: url(../img/sweet-6.jpg);
 }
 
 main .main-area .main-content .main-text > p {
@@ -315,11 +315,11 @@ main .main-area .main-content .main-mix {
   margin-top: -1.25rem;
   -ms-flex-item-align: start;
       align-self: flex-start;
-  background-image: url(../../img/直式-為什麼一定要吃甜點.png);
+  background-image: url(../img/直式-為什麼一定要吃甜點.png);
 }
 
 main .main-area .main-content .main-mix:last-of-type {
-  background-image: url(../../img/直式-為什麼選擇了做甜點.png);
+  background-image: url(../img/直式-為什麼選擇了做甜點.png);
 }
 
 .main-bottom-area {
@@ -343,7 +343,7 @@ main .main-area .main-content .main-mix:last-of-type {
   background-position: center center;
   width: 5.625rem;
   height: 20.625rem;
-  background-image: url(../../img/直式-想吃甜點是不需要理由的.png);
+  background-image: url(../img/直式-想吃甜點是不需要理由的.png);
 }
 
 @media (max-width: 1023px) {
@@ -355,10 +355,10 @@ main .main-area .main-content .main-mix:last-of-type {
     margin-left: auto;
     margin-right: auto;
     margin-bottom: 5rem;
-    background-image: url(../../img/橫式-為什麼一定要吃甜點.png);
+    background-image: url(../img/橫式-為什麼一定要吃甜點.png);
   }
   main .main-sm-img:nth-of-type(1) {
-    background-image: url(../../img/橫式-為什麼選擇了做甜點.png);
+    background-image: url(../img/橫式-為什麼選擇了做甜點.png);
   }
   main .main-area:nth-of-type(2) {
     margin-bottom: 5rem;
@@ -423,7 +423,7 @@ main .main-area .main-content .main-mix:last-of-type {
     background-position: center center;
     width: 20.625rem;
     height: 5.75rem;
-    background-image: url(../../img/橫式-想吃甜點是不需要理由的.png);
+    background-image: url(../img/橫式-想吃甜點是不需要理由的.png);
   }
 }
 
@@ -473,19 +473,19 @@ section .card-area .card .card-img-4 {
 }
 
 section .card-area .card .card-img-1 {
-  background-image: url(../../img/sweet-7.jpg);
+  background-image: url(../img/sweet-7.jpg);
 }
 
 section .card-area .card .card-img-2 {
-  background-image: url(../../img/sweet-8.jpg);
+  background-image: url(../img/sweet-8.jpg);
 }
 
 section .card-area .card .card-img-3 {
-  background-image: url(../../img/sweet-9.jpg);
+  background-image: url(../img/sweet-9.jpg);
 }
 
 section .card-area .card .card-img-4 {
-  background-image: url(../../img/sweet-10.jpg);
+  background-image: url(../img/sweet-10.jpg);
 }
 
 section .card-area .card:last-of-type {
@@ -641,7 +641,7 @@ footer .footer-top .bar-area .bar-1 .bar-icon {
   width: 2.5rem;
   height: 2.5rem;
   margin-right: 1.25rem;
-  background-image: url(../../img/logo-trans.png);
+  background-image: url(../img/logo-trans.png);
 }
 
 footer .footer-top .bar-area .bar-1 p {
@@ -748,7 +748,7 @@ footer .footer-bottom .footer-area .footer-left .footer-left-logo {
   background-position: center center;
   width: 11.25rem;
   height: 1.75rem;
-  background-image: url(/img/logo-footer.png);
+  background-image: url(../img/logo-footer.png);
   margin-bottom: 7.5rem;
 }
 
@@ -777,7 +777,7 @@ footer .footer-bottom .footer-area .footer-right .footer-right-logo {
   width: 3.75rem;
   height: 13.75rem;
   margin-left: auto;
-  background-image: url(/img/直式-今天是個吃甜點的好日子.png);
+  background-image: url(../img/直式-今天是個吃甜點的好日子.png);
 }
 
 footer .footer-bottom .footer-area .footer-right p {

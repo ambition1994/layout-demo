@@ -19,7 +19,7 @@ footer {
           @include image_center;
           @include size(2.5rem, 2.5rem);
           margin-right: 1.25rem;
-          background-image: url(../../img/logo-trans.png);
+          background-image: url(../img/logo-trans.png);
         }
 
         p {
@@ -83,7 +83,7 @@ footer {
         .footer-left-logo {
           @include image_center;
           @include size(11.25rem, 1.75rem);
-          background-image: url(/img/logo-footer.png);
+          background-image: url(../img/logo-footer.png);
           margin-bottom: 7.5rem;
         }
 
@@ -110,7 +110,7 @@ footer {
           @include image_center;
           @include size(3.75rem, 13.75rem);
           margin-left: auto;
-          background-image: url(/img/直式-今天是個吃甜點的好日子.png);
+          background-image: url(../img/直式-今天是個吃甜點的好日子.png);
         }
 
         p {

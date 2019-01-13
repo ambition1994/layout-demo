@@ -3,7 +3,7 @@ section {
   .hero {
     @include image_center;
     @include size(58.75rem, 31.25rem);
-    background-image: url(../../img/sweet-1.jpg);
+    background-image: url(../img/sweet-1.jpg);
   }
 }
 
