@@ -1,0 +1,70 @@
+nav {
+  @include flex_center_between;
+  height: 6.25rem;
+  padding-left: 2.625rem;
+  padding-right: 2.625rem;
+
+  .fa-align-justify {
+    display: none;
+  }
+
+  .nav-logo {
+    @include size(13.75rem, 2.5rem);
+    @include image_center;
+    background-image: url(../../img/logo-navbar.png);
+  }
+
+  ul {
+    @include flex_center_between;
+    color: $dark_green;
+
+    li {
+      margin-right: 3.75rem;
+
+      &:nth-of-type(3),
+      &:last-child {
+        margin-right: 0rem;
+      }
+
+      i {
+        margin-left: 5rem;
+        font-size: 1.35rem;
+      }
+    }
+  }
+}
+
+@media (max-width: 767px) {
+
+  nav {
+
+    .fa-align-justify {
+      display: block;
+      color: $dark_green;
+      font-size: 1.35rem;
+    }
+
+    .nav-logo {
+      display: none;
+    }
+
+    .sm-nav-logo {
+      @include image_center;
+      @include size(10.75rem, 1.75rem);
+      background-image: url(/img/logo-footer.png);
+    }
+
+    ul {
+
+      li:nth-of-type(1),
+      li:nth-of-type(2),
+      li:nth-of-type(3), {
+        display: none;
+      }
+
+      li > i {
+        margin-left: 0rem;
+      }
+    }
+  }
+}

@@ -1,0 +1,51 @@
+section {
+  @include flex_center_center;
+
+  .menu {
+    @include image_center;
+    @include size(16rem, 16rem);
+    margin-top: -5.625rem;
+    border-right: 0.0625rem solid $white;
+
+    &:nth-of-type(1) {
+      background-image: url(../../img/sweet-2.jpg);
+    }
+
+    &:nth-of-type(2) {
+      background-image: url(../../img/sweet-3.jpg);
+    }
+
+    &:nth-of-type(3) {
+      background-image: url(../../img/sweet-4.jpg);
+      border-right: none;
+    }
+
+    .blur-1,
+    .blur-2,
+    .blur-3 {
+      @include flex_center_center;
+      @include size(100%, 100%);
+      color: $white;
+      background-color: rgba($color: $dark_green, $alpha: 0.9);
+
+      p {
+        font-size: 1.5rem;
+        letter-spacing: 0.5rem;
+        writing-mode: vertical-lr;
+      }
+    }
+
+    .blur-1 {
+      color: $dark_green;
+      background-color: rgba($color: $yellow, $alpha: 0.9);
+    }
+  }
+}
+
+@media (max-width: 568px) {
+
+  section > .menu {
+    @include size(16rem, 11.25rem);
+    margin-top: 0rem;
+  }
+}

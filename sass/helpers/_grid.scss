@@ -1,0 +1,45 @@
+@mixin size($w, $h) {
+  width: $w;
+  height: $h;
+}
+
+@mixin flex_center_center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+@mixin flex_center_between {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+@mixin flex_between {
+  display: flex;
+  justify-content: space-between;
+}
+
+@mixin flex_center_around {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+@mixin image_center {
+  background-size: cover;
+  background-position: center center;
+}
+
+nav,
+header,
+section {
+  max-width: 64rem;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+section {
+  padding-left: 2.625rem;
+  padding-right: 2.625rem;
+}

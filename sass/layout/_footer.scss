@@ -1,0 +1,187 @@
+footer {
+  @include size(100%, 28.5625rem);
+  margin-top: 3.75rem;
+
+  .footer-top {
+    @include flex_center_center;
+    @include size(100%, 7.25rem);
+    background-color: $dark_green;
+
+    .bar-area {
+      @include flex_center_around;
+      @include size(58.75rem, 7.25rem);
+
+      .bar-1 {
+        display: flex;
+        align-items: center;
+
+        .bar-icon {
+          @include image_center;
+          @include size(2.5rem, 2.5rem);
+          margin-right: 1.25rem;
+          background-image: url(../../img/logo-trans.png);
+        }
+
+        p {
+          color: $white;
+          font-size: 1.5rem;
+        }
+      }
+
+      .bar-2 {
+        display: flex;
+
+        .bar-mail {
+          @include flex_center_center;
+          @include size(4rem, 3.5rem);
+          background-color: $light_green;
+
+          .fa-envelope {
+            color: $dark_green;
+            font-size: 1.5rem;
+          }
+        }
+
+        .bar-input {
+          display: flex;
+
+          input {
+            @include size(15.75rem, 3.5rem);
+            border: none;
+            outline: none;
+            background-color: $light_green;
+          }
+
+          .arrow {
+            @include flex_center_center;
+            @include size(4rem, 3.5rem);
+            cursor: pointer;
+            background-color: $yellow;
+
+            .fa-arrow-right {
+              color: $dark_green;
+              font-size: 1.25rem;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .footer-bottom {
+    @include flex_center_center;
+    @include size(100%, 21.3125rem);
+    background-color: $light_green;
+
+    .footer-area {
+      @include flex_center_between;
+      @include size(58.75rem, 21.3125rem);
+
+      .footer-left {
+        margin-left: 4.375rem;
+
+        .footer-left-logo {
+          @include image_center;
+          @include size(11.25rem, 1.75rem);
+          background-image: url(/img/logo-footer.png);
+          margin-bottom: 7.5rem;
+        }
+
+        p {
+          color: $dark_green;
+          margin-top: 0.75rem;
+        }
+
+        .footer-left-icon {
+          margin-top: 1.875rem;
+
+          i {
+            color: $dark_green;
+            font-size: 2rem;
+            margin-right: 0.5rem;
+          }
+        }
+      }
+
+      .footer-right {
+        margin-right: 4.375rem;
+
+        .footer-right-logo {
+          @include image_center;
+          @include size(3.75rem, 13.75rem);
+          margin-left: auto;
+          background-image: url(/img/直式-今天是個吃甜點的好日子.png);
+        }
+
+        p {
+          color: $dark_green;
+          margin-top: 3rem;
+          font-size: 0.75rem;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 767px) {
+  footer > .footer-top {
+    height: 11.875rem;
+
+    .bar-area {
+      flex-direction: column;
+
+      .bar-1 {
+        margin-bottom: 1.875rem;
+      }
+
+      .bar-2 > .bar-input > input {
+        width: 12rem;
+      }
+    }
+  }
+
+  footer > .footer-bottom {
+    height: 18.75rem;
+
+    .footer-area {
+      display: block;
+      height: 18.75rem;
+
+      .footer-left {
+        @include flex_center_center;
+        @include size(100%, 100%);
+        flex-direction: column;
+        margin-left: 0rem;
+
+        .footer-left-logo {
+          margin-top: -1.875rem;
+          margin-bottom: 1.5rem;
+        }
+
+        p {
+          margin-top: 1rem;
+        }
+
+        .footer-left-icon {
+          margin-top: 1rem;
+        }
+      }
+
+      .footer-right {
+        margin-right: 0rem;
+        width: 14.25rem;
+        margin-top: -2.5rem;
+        margin-left: auto;
+        margin-right: auto;
+
+        .footer-right-logo {
+          display: none;
+        }
+
+        p {
+          margin-top: 0rem;
+        }
+      }
+    }
+  }
+}

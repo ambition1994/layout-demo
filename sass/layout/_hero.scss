@@ -1,0 +1,28 @@
+section {
+  
+  .hero {
+    @include image_center;
+    @include size(58.75rem, 31.25rem);
+    background-image: url(../../img/sweet-1.jpg);
+  }
+}
+
+@media (max-width: 767px) {
+
+  section > .hero {
+    @include size(58.75rem, 25rem);
+  }
+
+}
+
+@media (max-width: 568px) {
+
+  section {
+    padding-left: 0rem;
+    padding-right: 0rem;
+
+    .hero {
+      @include size(58.75rem, 18.75rem);
+    }
+  }
+}

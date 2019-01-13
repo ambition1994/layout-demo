@@ -1,0 +1,854 @@
+@charset "UTF-8";
+@import url("https://fonts.googleapis.com/css?family=Noto+Sans+TC");
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: "Noto Sans TC", sans-serif;
+}
+
+nav,
+header,
+section {
+  max-width: 64rem;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+section {
+  padding-left: 2.625rem;
+  padding-right: 2.625rem;
+}
+
+section .hero {
+  background-size: cover;
+  background-position: center center;
+  width: 58.75rem;
+  height: 31.25rem;
+  background-image: url(../../img/sweet-1.jpg);
+}
+
+@media (max-width: 767px) {
+  section > .hero {
+    width: 58.75rem;
+    height: 25rem;
+  }
+}
+
+@media (max-width: 568px) {
+  section {
+    padding-left: 0rem;
+    padding-right: 0rem;
+  }
+  section .hero {
+    width: 58.75rem;
+    height: 18.75rem;
+  }
+}
+
+nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  height: 6.25rem;
+  padding-left: 2.625rem;
+  padding-right: 2.625rem;
+}
+
+nav .fa-align-justify {
+  display: none;
+}
+
+nav .nav-logo {
+  width: 13.75rem;
+  height: 2.5rem;
+  background-size: cover;
+  background-position: center center;
+  background-image: url(../../img/logo-navbar.png);
+}
+
+nav ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  color: #3f5d45;
+}
+
+nav ul li {
+  margin-right: 3.75rem;
+}
+
+nav ul li:nth-of-type(3), nav ul li:last-child {
+  margin-right: 0rem;
+}
+
+nav ul li i {
+  margin-left: 5rem;
+  font-size: 1.35rem;
+}
+
+@media (max-width: 767px) {
+  nav .fa-align-justify {
+    display: block;
+    color: #3f5d45;
+    font-size: 1.35rem;
+  }
+  nav .nav-logo {
+    display: none;
+  }
+  nav .sm-nav-logo {
+    background-size: cover;
+    background-position: center center;
+    width: 10.75rem;
+    height: 1.75rem;
+    background-image: url(/img/logo-footer.png);
+  }
+  nav ul li:nth-of-type(1),
+  nav ul li:nth-of-type(2),
+  nav ul li:nth-of-type(3) {
+    display: none;
+  }
+  nav ul li > i {
+    margin-left: 0rem;
+  }
+}
+
+section {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+section .menu {
+  background-size: cover;
+  background-position: center center;
+  width: 16rem;
+  height: 16rem;
+  margin-top: -5.625rem;
+  border-right: 0.0625rem solid #ffffff;
+}
+
+section .menu:nth-of-type(1) {
+  background-image: url(../../img/sweet-2.jpg);
+}
+
+section .menu:nth-of-type(2) {
+  background-image: url(../../img/sweet-3.jpg);
+}
+
+section .menu:nth-of-type(3) {
+  background-image: url(../../img/sweet-4.jpg);
+  border-right: none;
+}
+
+section .menu .blur-1,
+section .menu .blur-2,
+section .menu .blur-3 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 100%;
+  height: 100%;
+  color: #ffffff;
+  background-color: rgba(63, 93, 69, 0.9);
+}
+
+section .menu .blur-1 p,
+section .menu .blur-2 p,
+section .menu .blur-3 p {
+  font-size: 1.5rem;
+  letter-spacing: 0.5rem;
+  -webkit-writing-mode: vertical-lr;
+      -ms-writing-mode: tb-lr;
+          writing-mode: vertical-lr;
+}
+
+section .menu .blur-1 {
+  color: #3f5d45;
+  background-color: rgba(255, 225, 128, 0.9);
+}
+
+@media (max-width: 568px) {
+  section > .menu {
+    width: 16rem;
+    height: 11.25rem;
+    margin-top: 0rem;
+  }
+}
+
+main {
+  margin-top: 5rem;
+}
+
+main .main-area {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding-left: 2.625rem;
+  padding-right: 2.625rem;
+  background-color: #eaf0ed;
+}
+
+main .main-area:nth-of-type(2) {
+  margin-bottom: 6.5625rem;
+}
+
+main .main-area .main-content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 58.75rem;
+  height: 26.25rem;
+}
+
+main .main-area .main-content .main-img {
+  background-size: cover;
+  background-position: center center;
+  width: 28.75rem;
+  height: 28.75rem;
+  background-image: url(../../img/sweet-5.jpg);
+}
+
+main .main-area .main-content .main-img:last-of-type {
+  background-image: url(../../img/sweet-6.jpg);
+}
+
+main .main-area .main-content .main-text > p {
+  width: 15.625rem;
+  height: 18.75rem;
+  color: #8da291;
+  line-height: 2.25rem;
+  -webkit-writing-mode: vertical-lr;
+      -ms-writing-mode: tb-lr;
+          writing-mode: vertical-lr;
+}
+
+main .main-area .main-content .main-mix {
+  background-size: cover;
+  background-position: center center;
+  width: 5.625rem;
+  height: 19.25rem;
+  margin-top: -1.25rem;
+  -ms-flex-item-align: start;
+      align-self: flex-start;
+  background-image: url(../../img/直式-為什麼一定要吃甜點.png);
+}
+
+main .main-area .main-content .main-mix:last-of-type {
+  background-image: url(../../img/直式-為什麼選擇了做甜點.png);
+}
+
+.main-bottom-area {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 100%;
+  height: auto;
+  margin-top: 5.9375rem;
+  margin-bottom: 5rem;
+}
+
+.main-bottom-area .main-bottom {
+  background-size: cover;
+  background-position: center center;
+  width: 5.625rem;
+  height: 20.625rem;
+  background-image: url(../../img/直式-想吃甜點是不需要理由的.png);
+}
+
+@media (max-width: 1023px) {
+  main .main-sm-img {
+    background-size: cover;
+    background-position: center center;
+    width: 19.25rem;
+    height: 6rem;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 5rem;
+    background-image: url(../../img/橫式-為什麼一定要吃甜點.png);
+  }
+  main .main-sm-img:nth-of-type(1) {
+    background-image: url(../../img/橫式-為什麼選擇了做甜點.png);
+  }
+  main .main-area:nth-of-type(2) {
+    margin-bottom: 5rem;
+  }
+  main .main-area .main-content {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+  }
+  main .main-area .main-content .main-img {
+    width: 27.5rem;
+    height: 20rem;
+  }
+  main .main-area .main-content .main-mix {
+    display: none;
+  }
+}
+
+@media (max-width: 767px) {
+  main > .main-area .main-content {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  main > .main-area .main-content .main-img {
+    margin-top: -1.25rem;
+    width: 80%;
+    height: 20rem;
+  }
+  main > .main-area .main-content .main-text p {
+    width: 80%;
+    height: auto;
+    -webkit-writing-mode: unset;
+        -ms-writing-mode: unset;
+            writing-mode: unset;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  main > .main-area .main-content .main-text p br {
+    display: none;
+  }
+  main > .main-area .reverse {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+  }
+  .main-bottom-area {
+    margin-top: 5rem;
+    margin-bottom: 5rem;
+  }
+  .main-bottom-area .main-bottom {
+    background-size: cover;
+    background-position: center center;
+    width: 20.625rem;
+    height: 5.75rem;
+    background-image: url(../../img/橫式-想吃甜點是不需要理由的.png);
+  }
+}
+
+@media (max-width: 568px) {
+  main > .main-area > .main-content .main-img {
+    width: 100%;
+    height: 20rem;
+  }
+  main > .main-area > .main-content .main-text p {
+    width: 100%;
+    height: auto;
+  }
+}
+
+section .card-area {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 58.75rem;
+  height: auto;
+}
+
+section .card-area .card:nth-of-type(1), section .card-area .card:nth-of-type(2) {
+  margin-right: 1.25rem;
+}
+
+section .card-area .card .card-img-1,
+section .card-area .card .card-img-2,
+section .card-area .card .card-img-3,
+section .card-area .card .card-img-4 {
+  width: 18.75rem;
+  height: 19.75rem;
+  background-size: cover;
+  background-position: center center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+section .card-area .card .card-img-1 {
+  background-image: url(../../img/sweet-7.jpg);
+}
+
+section .card-area .card .card-img-2 {
+  background-image: url(../../img/sweet-8.jpg);
+}
+
+section .card-area .card .card-img-3 {
+  background-image: url(../../img/sweet-9.jpg);
+}
+
+section .card-area .card .card-img-4 {
+  background-image: url(../../img/sweet-10.jpg);
+}
+
+section .card-area .card:last-of-type {
+  display: none;
+}
+
+section .card-area .card .tooltip {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 2.25rem;
+  height: 6.75rem;
+  color: #ffffff;
+  margin-left: 1.25rem;
+  letter-spacing: 0.25rem;
+  -webkit-writing-mode: vertical-rl;
+      -ms-writing-mode: tb-rl;
+          writing-mode: vertical-rl;
+  background-color: #3f5d45;
+}
+
+section .card-area .card .heart {
+  color: #3f5d45;
+  font-size: 1.25rem;
+  margin-top: 1rem;
+  margin-right: 1.25rem;
+}
+
+section .card-area .card .detail {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  color: #3f5d45;
+  font-size: 1.25rem;
+}
+
+section .card-area .card .detail .product {
+  width: 10rem;
+  text-align: center;
+  line-height: 3.5rem;
+  border-left: 1px solid #eaf0ed;
+  border-right: 1px solid #eaf0ed;
+}
+
+section .card-area .card .detail .price {
+  width: 8.75rem;
+  text-align: center;
+  line-height: 3.5rem;
+  border-right: 1px solid #eaf0ed;
+}
+
+section .card-area .card .btn-cart {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  height: 4rem;
+  color: #3f5d45;
+  font-size: 1.5rem;
+  background-color: #eaf0ed;
+}
+
+@media (max-width: 1023px) {
+  section .card-area {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  section .card-area .card {
+    margin-left: 1.25rem;
+  }
+  section .card-area .card:nth-of-type(3) {
+    margin-right: 1.25rem;
+    margin-top: 2.5rem;
+  }
+  section .card-area .card:last-of-type {
+    margin-right: 1.25rem;
+    margin-top: 2.5rem;
+    display: unset;
+  }
+}
+
+@media (max-width: 767px) {
+  section > .card-area > .card:nth-of-type(2) {
+    margin-top: 2.5rem;
+  }
+}
+
+footer {
+  width: 100%;
+  height: 28.5625rem;
+  margin-top: 3.75rem;
+}
+
+footer .footer-top {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 100%;
+  height: 7.25rem;
+  background-color: #3f5d45;
+}
+
+footer .footer-top .bar-area {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  width: 58.75rem;
+  height: 7.25rem;
+}
+
+footer .footer-top .bar-area .bar-1 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+footer .footer-top .bar-area .bar-1 .bar-icon {
+  background-size: cover;
+  background-position: center center;
+  width: 2.5rem;
+  height: 2.5rem;
+  margin-right: 1.25rem;
+  background-image: url(../../img/logo-trans.png);
+}
+
+footer .footer-top .bar-area .bar-1 p {
+  color: #ffffff;
+  font-size: 1.5rem;
+}
+
+footer .footer-top .bar-area .bar-2 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+footer .footer-top .bar-area .bar-2 .bar-mail {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 4rem;
+  height: 3.5rem;
+  background-color: #eaf0ed;
+}
+
+footer .footer-top .bar-area .bar-2 .bar-mail .fa-envelope {
+  color: #3f5d45;
+  font-size: 1.5rem;
+}
+
+footer .footer-top .bar-area .bar-2 .bar-input {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+footer .footer-top .bar-area .bar-2 .bar-input input {
+  width: 15.75rem;
+  height: 3.5rem;
+  border: none;
+  outline: none;
+  background-color: #eaf0ed;
+}
+
+footer .footer-top .bar-area .bar-2 .bar-input .arrow {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 4rem;
+  height: 3.5rem;
+  cursor: pointer;
+  background-color: #ffe180;
+}
+
+footer .footer-top .bar-area .bar-2 .bar-input .arrow .fa-arrow-right {
+  color: #3f5d45;
+  font-size: 1.25rem;
+}
+
+footer .footer-bottom {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 100%;
+  height: 21.3125rem;
+  background-color: #eaf0ed;
+}
+
+footer .footer-bottom .footer-area {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 58.75rem;
+  height: 21.3125rem;
+}
+
+footer .footer-bottom .footer-area .footer-left {
+  margin-left: 4.375rem;
+}
+
+footer .footer-bottom .footer-area .footer-left .footer-left-logo {
+  background-size: cover;
+  background-position: center center;
+  width: 11.25rem;
+  height: 1.75rem;
+  background-image: url(/img/logo-footer.png);
+  margin-bottom: 7.5rem;
+}
+
+footer .footer-bottom .footer-area .footer-left p {
+  color: #3f5d45;
+  margin-top: 0.75rem;
+}
+
+footer .footer-bottom .footer-area .footer-left .footer-left-icon {
+  margin-top: 1.875rem;
+}
+
+footer .footer-bottom .footer-area .footer-left .footer-left-icon i {
+  color: #3f5d45;
+  font-size: 2rem;
+  margin-right: 0.5rem;
+}
+
+footer .footer-bottom .footer-area .footer-right {
+  margin-right: 4.375rem;
+}
+
+footer .footer-bottom .footer-area .footer-right .footer-right-logo {
+  background-size: cover;
+  background-position: center center;
+  width: 3.75rem;
+  height: 13.75rem;
+  margin-left: auto;
+  background-image: url(/img/直式-今天是個吃甜點的好日子.png);
+}
+
+footer .footer-bottom .footer-area .footer-right p {
+  color: #3f5d45;
+  margin-top: 3rem;
+  font-size: 0.75rem;
+}
+
+@media (max-width: 767px) {
+  footer > .footer-top {
+    height: 11.875rem;
+  }
+  footer > .footer-top .bar-area {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  footer > .footer-top .bar-area .bar-1 {
+    margin-bottom: 1.875rem;
+  }
+  footer > .footer-top .bar-area .bar-2 > .bar-input > input {
+    width: 12rem;
+  }
+  footer > .footer-bottom {
+    height: 18.75rem;
+  }
+  footer > .footer-bottom .footer-area {
+    display: block;
+    height: 18.75rem;
+  }
+  footer > .footer-bottom .footer-area .footer-left {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    width: 100%;
+    height: 100%;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    margin-left: 0rem;
+  }
+  footer > .footer-bottom .footer-area .footer-left .footer-left-logo {
+    margin-top: -1.875rem;
+    margin-bottom: 1.5rem;
+  }
+  footer > .footer-bottom .footer-area .footer-left p {
+    margin-top: 1rem;
+  }
+  footer > .footer-bottom .footer-area .footer-left .footer-left-icon {
+    margin-top: 1rem;
+  }
+  footer > .footer-bottom .footer-area .footer-right {
+    margin-right: 0rem;
+    width: 14.25rem;
+    margin-top: -2.5rem;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  footer > .footer-bottom .footer-area .footer-right .footer-right-logo {
+    display: none;
+  }
+  footer > .footer-bottom .footer-area .footer-right p {
+    margin-top: 0rem;
+  }
+}
+/*# sourceMappingURL=all.css.map */
