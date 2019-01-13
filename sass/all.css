@@ -685,6 +685,7 @@ footer .footer-top .bar-area .bar-2 .bar-input input {
   width: 15.75rem;
   height: 3.5rem;
   border: 0rem;
+  outline: none;
   background-color: #eaf0ed;
 }
 
